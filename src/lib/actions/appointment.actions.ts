@@ -36,7 +36,8 @@ export const getRecentAppointmentList = async () => {
             DATABASE_ID!,
             APPOINTMENT_COLLECTION_ID!,
             [Query.orderDesc("$createdAt")]
-        );       
+        );
+
 
         const initialCounts = {
             scheduledCount: 0,
